@@ -1,0 +1,39 @@
+/* client/src/App.css */
+
+/* Reseteo básico + fuente Poppins (asegúrate de importarla en public/index.html) */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb); /* Degradado */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor principal de la app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Título principal de ejemplo */
+.main-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Si usas un contenedor para formularios */
+.forms-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

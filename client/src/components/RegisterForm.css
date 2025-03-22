@@ -1,0 +1,87 @@
+/* client/src/components/RegisterForm.css */
+
+/* Contenedor general del formulario */
+.register-form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    /* Animación de entrada */
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  /* Título dentro del formulario */
+  .form-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Grupo de campos (label + input) */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #555;
+  }
+  
+  /* Inputs y selects */
+  .form-input, select.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .form-input:focus {
+    border-color: #8ab4f8; /* color de foco */
+  }
+  
+  /* Botón de registrar */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50; /* verde */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #43a047; /* verde más oscuro */
+  }
+  
+  /* Mensaje de éxito o error */
+  .form-message {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Animación */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
