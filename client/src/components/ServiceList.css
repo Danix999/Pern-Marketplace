@@ -72,3 +72,123 @@
     color: #000;
   }
   
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .service-card {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+/* client/src/components/ServiceList.css */
+
+/* ... (mantén tus estilos previos) ... */
+
+/* Contenedor principal */
+.service-list-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botón "Volver" */
+.back-button {
+  background: none;
+  border: none;
+  color: #007BFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.back-button:hover {
+  color: #0056b3;
+}
+
+/* Título de la lista */
+.service-list-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buscador de servicios */
+.search-bar-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Tarjetas de servicio */
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.service-title {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.service-description {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #555;
+}
+.service-price,
+.service-delivery {
+  margin: 5px 0;
+  font-weight: 500;
+  color: #333;
+}
+.service-price span,
+.service-delivery span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Mensaje cuando no se encuentran resultados */
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  

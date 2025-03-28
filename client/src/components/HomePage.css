@@ -1,0 +1,87 @@
+/* client/src/components/HomePage.css */
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('https://source.unsplash.com/1600x900/?professional,office') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    color: #ddd;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Botones reutilizables ya definidos en App.css global o aquí */
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #218838;
+  }
+  
+  /* Animación de fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
