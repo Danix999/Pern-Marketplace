@@ -1,14 +1,28 @@
 /* client/src/App.css */
+/* Variables Globales - Theme */
+:root {
+  --primary-color: #007bff;
+  --primary-color-hover: #0056b3;
+  --secondary-color: #28a745;
+  --secondary-color-hover: #218838;
+  --text-color: #333;
+  --background-gradient: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  --font-family: 'Poppins', sans-serif;
+}
+/* client/src/App.css */
 
-/* Reseteo básico + fuente Poppins (asegúrate de importarla en public/index.html) */
+/* Variables globales ya definidas en :root arriba */
+
+/* Reset básico y fondo degradado */
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif; 
-  background: linear-gradient(120deg, #a1c4fd, #c2e9fb); /* Degradado */
+  font-family: var(--font-family);
+  background: var(--background-gradient);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: var(--text-color);
 }
 
 /* Contenedor principal de la app */
@@ -19,21 +33,36 @@ html, body {
   padding: 30px;
 }
 
-/* Título principal de ejemplo */
-.main-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 40px;
-  font-weight: 600;
+/* Estilo global para botones reutilizables */
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-/* Si usas un contenedor para formularios */
-.forms-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Botón primario */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
 }
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Botón secundario */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color-hover);
+}
+
+/* Puedes agregar más estilos globales según necesites */
